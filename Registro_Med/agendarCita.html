@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <title>Agenda</title>
+  </head>
+  <body>
+    <header>
+      <div id="titulo">
+        <h1>Agendas<span>Medicas.com</span></h1>
+      </div>
+      <nav id="navegacion_menu">
+        <ul>
+          <li><a href="#">Precios</a></li>
+          <li><a href="#">Clientes</a></li>
+          <li><a href="#">Soporte</a></li>
+          <li><a href="#">Contactos</a></li>
+          <li><a href="#">Cerrar sesión</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="datos">
+        <div id="fotoperfil">
+          <img
+            src="./img/perfilPaciente.png"
+            alt="perfilPaciente"
+            width="180"
+            height="180"
+          />
+          <figcaption>
+            <a href="#">Cambiar foto</a>
+          </figcaption>
+        </div>
+        <form id="datospaciente" name="datospaciente">
+          <h3>Datos del paciente</h3>
+          <label for="paciente">Paciente: </label
+          ><input readonly id="paciente" name="paciente" type="text" value="Sandra Cortez" />
+          <label for="documento">Documento identidad: </label
+          ><input readonly
+            id="documento"
+            name="documento"
+            type="number"
+            value="9823278378"
+            minlength="6"
+            maxlength="11"
+          /><br />
+          <label for="email">Correo: </label
+          ><input readonly id="email" name="email" type="email" value="test@test.co" />
+          <label for="telefono">Teléfono: </label
+          ><input readonly id="telefono" name="telefono" type="tel" value="555666"/><br />
+          <label for="edad">Edad: </label
+          ><input readonly id="edad" name="edad" type="number" value="49"/>
+          <label for="genero">Género: </label
+          ><input readonly id="genero" name="genero" type="text" value="Femenino"/>
+          <label for="peso">Peso(kg): </label
+          ><input readonly id="peso" name="peso" type="number" value="58"/>
+          <label for="estatura">Estatura(mt): </label
+          ><input readonly id="estatura" name="estatura" type="number" value="1.60"/><br />
+          <button id="actualizardatos">
+            <i class="fa fa-id-card"></i>Actualizar datos
+          </button>
+        </form>
+      </section>
+      <div id="vistas">
+        <h2 id="vistasolicitudcita">Solicitud Cita Médica</h2>
+        <h2 id="vistaconsultarcitas">Consultar Citas</h2>
+      </div>
+      <div id="solicitud">
+        <section id="formsolicitud">
+          <form name="solicitudcita" id="solicitudcita">
+            <div>
+              <label for="especialidad">Seleccione especialidad: </label>
+              <select id="especialidad" name="especialidad">
+                <option value="neuro">Neurocirugia</option>
+                <option value="fisio">Fisioterapia</option>
+                <option value="pedi">Pediatria</option>
+                <option value="nutri">Nutrición</option>
+              </select>
+            </div>
+            <div>
+              <label for="centromedico">Seleccione centro médico: </label>
+              <select id="centromedico" name="centromedico">
+                <option value="bosq">El bosque</option>
+                <option value="saba">La sabana</option>
+                <option value="espun">Especialista unidos</option>
+                <option value="head">HEAD</option>
+              </select>
+            </div>
+            <div>
+              <label for="profesional">Seleccione profesional: </label>
+              <select id="profesional" name="profesional">
+                <option value="1">Antonio Silva</option>
+                <option value="2">Claudia Menex</option>
+                <option value="3">Ander Ferrera</option>
+                <option value="4">Maria Soler</option>
+              </select>
+            </div>
+            <div>
+              <label for="fechacita">Fecha de cita: </label>
+              <input
+                type="date"
+                value="2021-11-05"
+                min="2021-11-05"
+                max="2021-11-30"
+              />
+            </div>
+            <div>
+              <label for="horacita">Hora de cita: </label>
+              <input
+                list="listalimitestiempo"
+                type="time"
+                value="06:30"
+                min="06:30"
+                step="600"
+                max="18:00"
+              />
+              <datalist id="listalimitestiempo">
+                <option value="06:30"></option>
+                <option value="07:00"></option>
+                <option value="07:30"></option>
+                <option value="08:00"></option>
+                <option value="08:30"></option>
+                <option value="09:00"></option>
+                <option value="09:30"></option>
+                <option value="10:00"></option>
+                <option value="10:30"></option>
+                <option value="11:00"></option>
+                <option value="11:30"></option>
+                <option value="12:00"></option>
+              </datalist>
+            </div>
+            <div>
+              <label for="valorcita">valor cita: $</label>
+              <input type="text" value="65.000" disabled />
+            </div>
+            <button id="agregarcita">
+              <i class="fa fa-plus" aria-hidden="true"></i>Agregar Cita
+            </button>
+          </form>
+        </section>
+        <section id="resumen">
+            <table>
+              <caption>Resumen</caption>
+            <tr>
+              <th>Fecha</th>
+              <th>Hora</th>
+              <th>Profesional</th>
+              <th>Centro Médico</th>
+              <th>Especialidad</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>2021/11/6</td>
+              <td>09:30</td>
+              <td>Claudia Menex</td>
+              <td>HEAD</td>
+              <td>Fisioterapia</td>
+              <td>
+                <button id="editarcita"><i class="fa fa-edit"></i></button
+                ><button id="cancelarcita"><i class="fa fa-times"></i></button>
+              </td>
+            </tr>
+          </table>
+          <button id="nuevacita">Nueva Cita</button>
+          <button id="agendarcita">
+            <i class="fa fa-save"></i>Agendar Cita
+          </button>
+        </section>
+      </div>
+      <div id="consultar">
+        <section>
+            <table>
+              <caption><h3>Histórico Citas Médicas</h3></caption>
+            <tr>
+              <th>Fecha</th>
+              <th>Hora</th>
+              <th>Profesional</th>
+              <th>Centro Médico</th>
+              <th>Asistio</th>
+              <th>Valor</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>2021/11/6</td>
+              <td>09:30</td>
+              <td>Claudia Menex</td>
+              <td>HEAD</td>
+              <td>SI</td>
+              <td>$65.000</td>
+              <td>
+                <button id="editarcita"><i class="fa fa-edit"></i></button
+                ><button id="cancelarcita"><i class="fa fa-times"></i></button>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div id="iconos">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+      <div id="correo">
+        <h3>tuagenda@agendasmedicas.com</h3>
+      </div>
+    </footer>
+  </body>
+</html>
