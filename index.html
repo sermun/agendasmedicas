@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous">
+
+        <title>Agenda</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:300,400,700,900"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div id="container">
+            <header id="header">
+                <nav>
+                    <div id="titulo">
+                        <h1>Agendas<span>Medicas.com</span></h1>
+                    </div>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="bar-btn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+
+                    <ul id="nav-menu">
+                        <li><a class="active" href="#">Inicio</a></li>
+                        <li><a href="#">Precios</a></li>
+                        <li><a href="#">Clientes</a></li>
+                        <li><a href="#">Soporte</a></li>
+                        <li><a href="#">Contactos</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main id="formulario">
+                <section id="med-container">        
+                    <form action="#">
+                        <div id="contenedor-form">
+                            <legend>Para ingresar digite sus datos</legend>
+                            
+                            <input class="tex-box" type="text" id="tprofesional"
+                                name="tprofesional"
+                                placeholder="Tarjeta Profesional">
+
+                            <input class="tex-box" type="password" name="clave"
+                                id="clave"
+                                maxlength="12" placeholder="Contraseña">
+
+                            <a class="" href="">Recuperar contraseña</a>
+
+                            <input class="botons" type="submit"
+                                value="Ingresar">
+
+                            <a class="" href="regmedicos.html">Registrarse</a>
+                            <h1>MÉDICOS</h1>
+                        </div>
+                        
+                </section>
+                <aside id="pac-container">
+
+                        <legend>Para ingresar digite sus datos</legend>
+                        <div id="contenedor-form">
+
+                            <input class="tex-box" type="text" id="DocIdentidad"
+                                name="DocIdentidad"
+                                placeholder="Documento de Identidad">
+
+                            <input class="tex-box" type="password" name="clave"
+                                id="clave"
+                                maxlength="12" placeholder="Contraseña">
+
+                            <a class="" href="">Recuperar contraseña</a>
+
+                            <input class="botons" type="submit"
+                                value="Ingresar">
+
+                            <a class="" href="">Registrarse</a>
+
+                        </div>
+
+                        <h1>PACIENTES</h1>
+
+                </aside>
+                </main>
+                <footer id="footer">
+                    <div id="iconos">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div id="correo">
+                        <h3>tuagenda@agendasmedicas.com</h3>
+                    </div>
+                </footer>
+            </div>
+        </body>
+    </html>
