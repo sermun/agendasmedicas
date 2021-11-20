@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous">
+        <title>Agenda</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:300,400,700,900"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        <div id="container">
+            <header id="header">
+                <nav>
+                    <div id="titulo">
+                        <h1>Agendas<span>Medicas.com</span></h1>
+                    </div>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="bar-btn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+
+                    <ul id="nav-menu">
+                        <li><a class="active" href="#">Inicio</a></li>
+                        <li><a href="#">Precios</a></li>
+                        <li><a href="#">Clientes</a></li>
+                        <li><a href="#">Soporte</a></li>
+                        <li><a href="#">Contactos</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div id="banner"></div> <!--Imagen-->
+
+            <main id="formulario">
+                <h3>FORMULARIO DE REGISTO PARA MÉDICOS</h3>
+                <form>
+                    <legend>Por favor diligencie todos los campos del formulario</legend>
+                    <div id="contenedor-form">
+
+                        <div class="box-section">
+                            <input class="tex-box" type="text" id="tarjetaprof"
+                            name="tarjetaprof" minlength="10"
+                            maxlength="10"
+                            placeholder="Tarjeta Profesional"/>
+                            <input type="text" id="nombre" name="nombre"
+                                placeholder="Nombre completo"/>
+                            <select name="tipodoc" id="tipodoc">
+                                <option value="CC">Cédula de Ciudadania</option>
+                                <option value="CE">Cédula Extranjeria</option>
+                                <option value="PAS">Pasaporte</option>
+                            </select>
+                            <input type="text" id="documento" name="documento"
+                                minlength="5" maxlength="10"
+                                placeholder="N° Documento"/>
+                        </div>
+
+                        <div class="box-section">
+                            <input class="tex-box" type="tel" id="telefono"
+                                name="telefono"
+                                minlength="10" maxlength="15"
+                                placeholder="Teléfono"/>
+                            <input class="tex-box" type="email" id="email"
+                                name="email"
+                                placeholder="Correo electrónico"/>
+                            <input class="tex-box" type="password" name="password"
+                                id="password"
+                                maxlength="12" placeholder="Contraseña"/>
+                        </div>
+                    </div>
+
+                    <div class="botones">
+                        <!-- uno u otro dependiendo lo que se vaya a necesitar -->
+                        <button id="cancelar" >Cancelar</button>
+                        <button id="registrar" >Registrar</button>
+                    </div>
+                </form>
+
+
+
+            </main>
+            <footer id="footer">
+                <div id="iconos">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <div id="correo">
+                    <h3>tuagenda@agendasmedicas.com</h3>
+                </div>
+            </footer>
+        </div>
+        <script src="./js/regmedicos.js"></script>
+    </body>
+</html>
