@@ -46,13 +46,12 @@
                                 placeholder="Tarjeta Profesional">
 
                             <input class="tex-box" type="password" name="clave"
-                                id="clave"
+                                id="clavemedico"
                                 maxlength="12" placeholder="Contraseña">
 
                             <a class="" href="">Recuperar contraseña</a>
 
-                            <input class="botons" type="submit"
-                                value="Ingresar">
+                            <button class="botons" id="loginmedico">Ingresar</button>
 
                             <a class="" href="regmedicos.html">Registrarse</a>
                         </div>
@@ -64,18 +63,17 @@
                     <form>
                         <div id="contenedor-form">
                             <legend>Para ingresar, digite sus datos:</legend>
-                            <input class="tex-box" type="text" id="DocIdentidad"
+                            <input class="tex-box" type="text" id="docidentidad"
                                 name="DocIdentidad"
                                 placeholder="Documento de Identidad">
 
                             <input class="tex-box" type="password" name="clave"
-                                id="clave"
+                                id="claveusuario"
                                 maxlength="12" placeholder="Contraseña">
 
                             <a class="" href="">Recuperar contraseña</a>
 
-                            <input class="botons" type="submit"
-                                value="Ingresar">
+                            <button class="botons" id="loginusuario" >Ingresar</button>
 
                             <a class="" href="">Registrarse</a>
 
@@ -96,5 +94,6 @@
                 </div>
             </footer>
         </div>
+        <script src="./js/login.js"></script>
     </body>
 </html>
