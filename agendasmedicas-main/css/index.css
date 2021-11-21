@@ -1,0 +1,285 @@
+
+:root{
+    --primario:white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Jost", sans-serif;
+}
+
+#container{    
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(159, 243, 215);     
+}
+#header{
+    height: 15%;
+    background-color: white; 
+    box-shadow: 10px 10px 20px -10px rgba(0,0,0,0.5);       
+}
+
+nav{
+    height: 100px;
+    width: 95%;
+    padding: 35px 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#titulo{
+    width: 140px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 30px;
+    
+}
+
+#titulo h1 {
+    color: rgb(96, 94, 184);
+}
+#titulo span {
+    color: rgb(79, 207, 169);
+}
+
+.bar-btn {
+    font-size: 30px;
+    color: black;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+#nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgba(255, 255, 255, 0.85);
+    text-align: center;
+    transition: all .5ms;
+    
+}
+
+#nav-menu li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+#nav-menu li a{
+    color: rgb(81, 148, 202);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#nav-menu li a.active, #nav-menu li a:hover {
+    color: rgb(50, 151, 121);
+    transition: .3s;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ #nav-menu {
+    height: 100vh;
+}
+
+#check:checked ~ #nav-menu li {
+    display: block;
+}
+
+#formulario{
+    height: 70%;
+}
+
+section{
+    width: 50%;
+    height:100%;
+    background-image: url(../img/home-med.png);           
+    position: relative;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    float: left;
+    justify-content: center;
+}
+
+aside{
+    width: 50%;
+    height:100%;
+    background-image: url(../img/home-pac.png);           
+    position: relative;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    float: right;
+    justify-content: center;
+}
+
+form{
+    margin: 255px;
+}
+
+#contenedor-form {
+    display: flex;
+    flex-direction: column;  
+    background-color: rgba(255, 255, 255, 0.75); 
+    width: 400px;
+    height: 220px;
+    padding-top: 20px;
+    text-align: center;  
+    align-items: center;
+    border-radius: 15px 15px 0px 0px;    
+    box-shadow: 10px 10px 20px -10px rgba(0,0,0,0.7);
+}
+
+legend{
+    font-size: 16px;
+    color: black;
+    padding-bottom: 10px;
+}
+
+#med-container h1{
+    display: flex;
+    height: 50px;
+    width: 400px;
+    background: rgb(96, 94, 184, 0.8);
+    border: none;
+    padding: 5;
+    color: rgb(35, 34, 77);
+    font-size: 20px;
+    font-weight: 550;   
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 10px 10px 20px -10px rgba(0,0,0,0.7); 
+    align-items: center;
+}
+
+
+#pac-container h1{
+    display: flex;
+    height: 50px;
+    width: 400px;
+    background: rgb(79, 207, 169, 0.8);
+    border: none;
+    padding: 20px;
+    color: rgb(21, 112, 62);
+    font-size: 20px;
+    font-weight: 550;   
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 10px 10px 20px -10px rgba(0,0,0,0.7); 
+    align-items: center;
+}
+
+.tex-box{    
+    width: 300px;
+    padding: 8px;
+    margin: 3px; 
+    font-size: 12px;  
+    border: none;
+    border-radius: 5px;        
+}
+
+.botons {
+    width: 150px;
+    padding: 5px;
+    font-family: "Jost", sans-serif;
+    font-size: 14px;
+}
+
+#footer{ 
+    height: 15%;
+    background-color: white;    
+    box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.5);
+    position: absolute
+}
+
+footer{
+    height: 100px;
+    width: 100%;
+    padding: 35px 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#iconos{
+    size: 150px;
+    margin-left: 80px;
+    font-size: 2rem;
+    border-radius: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(68, 160, 196)
+}
+
+#correo{
+    margin-right: 100px;
+    font-size:larger;
+    color: rgb(84, 245, 170)
+}
+
+@media screen and (min-width: 768px){
+    #titulo {
+        margin-left: 50px;
+        font-size: 30px;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    .bar-btn {
+        display: none;
+    }
+
+    #nav-menu {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    #nav-menu li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+        margin-top: 25px;
+        
+    }
+
+    #nav-menu li a{
+        font-size: 12px;
+    }
+
+    footer {
+        height: 100px;
+        
+    }    
+
+    #correo{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
