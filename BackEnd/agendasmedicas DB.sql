@@ -1,10 +1,7 @@
-create database citasmedicas;
-use citasmedicas;
-
 CREATE TABLE registro_paciente (
 `Id_Paciente` int not null, -- cc --
 `Nombre` varchar (100) not null,
-`tipo_doc` varchar (20) not null, 
+`tipo doc` varchar (20) not null, 
 `genero` varchar (5) not null,
 `email` varchar (30) not null,
 `Teléfono` varchar (20) not null,
@@ -18,8 +15,8 @@ primary key (`Id_Paciente`)
 CREATE TABLE registro_medico (
 `Id_Medico` varchar (20) not null, -- tarjeta profesional --
 `Nombre` varchar (100) not null,
-`tipo_doc` varchar (20) not null, 
-`Doc_Identidad`varchar (20) not null,
+`tipo doc` varchar (20) not null, 
+`Doc Identidad`varchar (20) not null,
 `email` varchar (30) not null,
 `Teléfono` varchar (20) not null,
 `Contraseña` varchar (12) not null,
@@ -28,7 +25,7 @@ primary key (`Id_Medico`)
 
 CREATE TABLE c_medico ( 
 `Id_CMedico` int not null auto_increment,
-`C_Medico` varchar (30) not null,
+`C Medico` varchar (30) not null,
 primary key (`Id_CMedico`)
 );
 
